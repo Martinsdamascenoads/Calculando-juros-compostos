@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+
+:root {
+    --liniear-gradient:linear-gradient(90deg, #38bdf8, #6d28b9, #4c1d95);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--liniear-gradient);
+    
+    color: #d1d5bd;
+}
+
+#calculator {
+
+    background-color: #2626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#calculato h2 {
+
+    font-size: 30px;
+    position: relative;
+
+}
+
+#calculator h2::before {
+    position: absolute content;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--liniear-gradient);
+}
+   
+
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+#input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+#result{
+    text-align: center;
+}
+#total{
+    font-size: 40px;
+}
+
